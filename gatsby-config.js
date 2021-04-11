@@ -1,15 +1,16 @@
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Notes on .NET Development`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Anth`,
+      summary: `who is busy exploring .NET`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A blog about code...`,
+    siteUrl: `https://www.google.com/`,
     social: {
-      twitter: `kylemathews`,
-    },
+      twitter: `aaa`,
+    },    
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -46,6 +47,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-reading-time`,
         ],
       },
     },
@@ -94,7 +96,7 @@ module.exports = {
                     excerpt
                     html
                     fields {
-                      slug
+                      slug                      
                     }
                     frontmatter {
                       title

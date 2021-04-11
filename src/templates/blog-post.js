@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>      
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          <Bio />
+          <Bio></Bio>
         </footer>
       </article>
       <nav className="blog-post-nav">
@@ -84,12 +84,12 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
+        description        
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {
-        slug
+        slug        
       }
       frontmatter {
         title
