@@ -11,7 +11,7 @@
     <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">bool</span></span> formResult <span class="token punctuation">{</span><span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span><span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">return</span> <span class="token return-type class-name">Return</span> <span class="token function">View</span><span class="token punctuation">(</span>viewModel<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<span class="token keyword">return</span> <span class="token function">View</span><span class="token punctuation">(</span>viewModel<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>just to hold the result of the action e.g. successful create. This is where TempData can be very, very useful for situations such as this where the use case is <strong><em>notifying the user</em></strong>.</p>
 <div class="gatsby-highlight" data-language="cs"><pre class="language-cs"><code class="language-cs">TempData<span class="token punctuation">[</span><span class="token string">"success"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token interpolation-string"><span class="token string">$"...passing various properties... created!"</span></span><span class="token punctuation">;</span></code></pre></div>
 <p>and then in the view:</p>
