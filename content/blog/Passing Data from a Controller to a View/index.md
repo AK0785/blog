@@ -22,7 +22,7 @@ public class viewModel {
     public bool formResult {get; set;}
 }
 
-return Return View(viewModel);
+return View(viewModel);
 ```
 
 just to hold the result of the action e.g. successful create. This is where TempData can be very, very useful for situations such as this where the use case is ***notifying the user***.
